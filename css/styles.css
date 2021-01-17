@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+input:focus,
+input[type='radio']:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card > img {
+  max-width: 327px;
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+}
+
+.card-info {
+  margin-top: 34px;
+  position: relative;
+  padding: 48px 24px 33px 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.card-info > h1 {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: -0.69px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.card-info > p {
+  color: #757575;
+  font-size: 16px;
+  letter-spacing: -0.28px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.interested {
+  padding-top: 31px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 50px;
+}
+
+.interested > h2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+}
+
+.interested > p {
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: -0.28px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.radio-toolbar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.radio-toolbar input[type='radio'] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ededed;
+  padding: 3px 6px;
+  font-size: 16px;
+  border: 2px solid #ededed;
+  border-radius: 20px;
+  cursor: pointer;
+  color: black;
+  width: 72px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin: 0 6px;
+}
+
+.radio-toolbar label svg {
+  display: inline-block;
+  width: 12px;
+  margin-right: 2px;
+}
+
+.radio-toolbar input[type='radio']:checked + label {
+  background: black;
+  border: 2px solid black;
+  color: #ffffff;
+}
+
+.radio-toolbar input[type='radio']:checked + label svg {
+  fill: white;
+}
+
+.contact-number {
+  margin-top: 24px;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.collapsed {
+  transform: scaleY(0);
+}
+
+.cta {
+  border-radius: 12px;
+  background-color: #fdb813;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 46px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  text-decoration: none;
+}
+
+.cta:hover {
+  text-decoration: none;
+}
+
+/* intl number input styles */
+
+/* intlTelInputflag styles */
+
+.iti__flag {
+  background-image: url('../img/flags.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url('../img/flags@2x.png');
+  }
+}
+
+input {
+  border-radius: 21px;
+  border: 1px solid #40a4ea;
+  padding: 1px 10px;
+}
+
+input[type='text'] {
+  width: 45%;
+}
+input[type='email'] {
+  width: 566px;
+  max-width: 100%;
+}
+
+.inputNumber {
+  border: none;
+  height: 100%;
+}
+
+.iti {
+  border-radius: 16px;
+  /* height: 56px; */
+  background-color: #eef2f8;
+}
+
+.iti--allow-dropdown {
+  height: 56px;
+  width: 100%;
+  position: relative;
+}
+.iti--allow-dropdown:before {
+  content: '';
+  display: block;
+  width: 1px;
+  background-color: #d3dae6;
+  position: absolute;
+  height: 32px;
+  left: 96px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: transparent;
+}
+.iti--allow-dropdown .iti__flag-container:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+  color: #596e98;
+  font-size: 16px;
+}
+input[type='tel'] {
+  background-color: #eef2f8;
+  position: relative;
+  width: 100%;
+  padding-left: 115px !important;
+}
+
+.example-number {
+  color: #757575;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-left: 11px;
+}
+
+/* thank you page */
+
+.thank-you-container {
+  padding: 50px 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.message h1 {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: -0.69px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.message p {
+  color: #757575;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  letter-spacing: -0.28px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.thank-you-container .cta {
+  margin-top: auto;
+}
