@@ -11,6 +11,12 @@ input[type='radio']:focus {
   box-shadow: none;
 }
 
+a[href^='tel'] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -247,7 +253,7 @@ input[type='tel'] {
   padding: 50px 16px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: calc(100vh - 210px);
 }
 
 .message {
@@ -287,5 +293,4 @@ input[type='tel'] {
   width: 90px;
   height: 90px;
   object-fit: cover;
-}
 }
