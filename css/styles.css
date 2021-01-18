@@ -250,6 +250,10 @@ input[type='tel'] {
   height: 100vh;
 }
 
+.message {
+  margin-top: 60px;
+}
+
 .message h1 {
   color: #000000;
   font-size: 24px;
@@ -268,8 +272,20 @@ input[type='tel'] {
   text-align: center;
   font-weight: 400;
   margin-top: 16px;
+  padding: 0 20px;
 }
 
 .thank-you-container .cta {
   margin-top: auto;
+}
+
+.check-icon {
+  text-align: center;
+}
+
+.check-icon img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
 }
