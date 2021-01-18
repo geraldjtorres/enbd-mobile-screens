@@ -253,7 +253,7 @@ input[type='tel'] {
   padding: 50px 16px;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 90px);
 }
 
 .message {
