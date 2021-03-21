@@ -46,6 +46,31 @@ a[href^='tel'] {
   margin-top: 20px;
 }
 
+.card-info ul {
+  /* margin-left: 40px; */
+  list-style: none;
+  margin-top: 30px;
+}
+
+.card-info li {
+  /* list-style-image: url(../img/mail-icon.png); */
+  /* padding: 0.3em 0 1em 40px; */
+  background-image: url(../img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 35px;
+  background-position-y: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card-info > h3 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
 .card-info > p {
   color: #757575;
   font-size: 16px;
